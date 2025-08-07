@@ -1,8 +1,6 @@
 #Содержит представления для обработки запросов API
 from rest_framework import generics,status
 from rest_framework.response import Response
-from django.utils.decorators import method_decorator
-from django.views.decorators.cache import cache_page
 from .models import Note
 from .serializers import NoteSerializer,NoteCreateSerializer,NoteUpdateSerializer
 

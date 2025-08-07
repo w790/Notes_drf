@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 from decouple import config
 
@@ -140,8 +139,8 @@ if DEBUG:
     CORS_ALLOW_ALL_ORIGINS = True  # Для разработки
 else:# Для продакшена
     CORS_ALLOWED_ORIGINS = [
-        "https://localhost:3000",
-        "https://127.0.0.1:3000",
+        "https://localhost:5173",
+        "https://127.0.0.1:5173",
     ]
 #Настройки безопасности
 SECURE_BROWSER_XSS_FILTER = True #Защита от XSS-атак
